@@ -1,0 +1,160 @@
+body {
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.game-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.equation-box {
+    font-size: 1.3rem;
+    margin: 1.5rem 0;
+    padding: 1.2rem;
+    background-color: #e3f2fd;
+    border-radius: 8px;
+    border-left: 4px solid #2196F3;
+}
+
+.step-card {
+    margin: 1rem 0;
+    padding: 1.2rem;
+    background-color: #fff3e0;
+    border-radius: 8px;
+    border-left: 4px solid #FF9800;
+}
+
+.step-header {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 0.8rem;
+}
+
+.choices-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.input-field {
+    padding: 0.5rem;
+    width: 100px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.choice-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.choice-btn:hover {
+    transform: scale(1.05);
+    background-color: #45a049;
+}
+
+.graph-container {
+    margin: 2rem 0;
+    height: 400px;
+    position: relative;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    margin: 20px 0;
+    height: 20px;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #4CAF50;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.score {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    color: white;
+    text-shadow: 0 0 2px black;
+}
+
+.question {
+    font-weight: bold;
+    margin: 1rem 0;
+    color: #2c3e50;
+}
+
+.katex {
+    font-size: 1.1em !important;
+    padding: 5px 0;
+}
+
+.action-buttons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.action-buttons button {
+    background: #2196F3;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.action-buttons button:hover {
+    background: #1976D2;
+}
+
+#pdf-content {
+    position: absolute;
+    left: -9999px;
+    width: 190mm;
+    background: white !important;
+    font-size: 12px !important;
+}
+
+.pdf-answer {
+    margin: 5px 0;
+    padding: 5px;
+    border-left: 3px solid #4CAF50;
+}
+
+.pdf-wrong {
+    border-color: #f44336;
+}
+
+.pdf-user-input {
+    color: #2196F3;
+    font-weight: bold;
+}

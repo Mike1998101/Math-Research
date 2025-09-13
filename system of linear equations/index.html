@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Scavenger Hunt</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.0.0"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
+    <!-- In the HTML head section -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+<body>
+<div class="game-container">
+    <h1>Math Scavenger Hunt</h1>
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+        <div class="score" id="score">Score: 0/5</div>
+    </div>
+    <div id="clue-container">
+        <div class="equation-box" id="equations"></div>
+        <div id="steps-container"></div>
+        <div class="graph-container">
+            <canvas id="graph"></canvas>
+        </div>
+        <div id="interaction-section"></div>
+        <div id="hint" class="hint-box"></div>
+    </div>
+    <div id="pdf-content" style="display: none;"></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
