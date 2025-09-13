@@ -1,0 +1,1 @@
+A Webpage project to Solve systems of linear equations using substitution and elimination. https://www.youtube.com/watch?v=IXI4Y5KtiC0 https://mike1998101.github.io/Math-Research/system%20of%20linear%20equations/
