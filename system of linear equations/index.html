@@ -3,21 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math Scavenger Hunt</title>
+    <title>Math Scavenger Hunt: Solve Systems of Linear Equations</title>
+    <meta name="description" content="Interactive math scavenger hunt for solving systems of linear equations using the substitution method. Practice Algebra 1 with step-by-step guidance and graphing.">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.0.0"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-
-    <!-- In the HTML head section -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </head>
 <body>
 <div class="game-container">
     <h1>Math Scavenger Hunt</h1>
+
+    <!-- Descriptive section for SEO and context -->
+    <div class="page-description" style="margin-bottom: 2rem; padding: 1rem; background-color: #f0f4f8; border-radius: 8px; border-left: 4px solid #2c7da0;">
+        <h2 style="margin-top: 0; color: #1e3c5c; font-size: 1.5rem;">Practice: Solving Systems of Linear Equations by Substitution</h2>
+        <p style="font-size: 1.1rem; line-height: 1.6; color: #2d3e50;">
+            This interactive math scavenger hunt helps students master the <strong>substitution method</strong> for solving 
+            systems of linear equations. Work through this step-by-step example:
+        </p>
+        <div style="background-color: white; padding: 1rem; border-radius: 6px; margin: 1rem 0; border: 1px solid #b3cde0;">
+            <p style="margin: 0.5rem 0;"><strong>System of Equations:</strong></p>
+            <p style="margin: 0.5rem 0; font-size: 1.3rem; font-family: monospace;">2x + 4y = 4<br>2x + y = 2</p>
+        </div>
+        <p style="font-size: 1.1rem; line-height: 1.6; color: #2d3e50;">
+            The solution <strong>(x = 0.67, y = 0.67)</strong> represents the intersection point of these two linear equations. 
+            Follow the steps shown, then enter your answer to check your understanding of algebraic substitution.
+        </p>
+        <p style="font-size: 1rem; color: #4a6fa5; margin-bottom: 0;">
+            📚 <strong>Learning Objectives:</strong> Practice algebraic manipulation, understand variable substitution, 
+            and visualize solutions as intersection points on a graph. Perfect for Algebra 1 students and self-learners.
+        </p>
+    </div>
+    <!-- End of descriptive section -->
+
     <div class="progress-container">
         <div class="progress-bar" id="progress-bar"></div>
         <div class="score" id="score">Score: 0/5</div>
